@@ -1,5 +1,8 @@
+import java.io.*;
+
 /**
- * Created by benbo on 4/25/2016.
+ *
+ * @author Benjamin Boudra
  */
 public class BranchAndBound01Knapsack {
 
