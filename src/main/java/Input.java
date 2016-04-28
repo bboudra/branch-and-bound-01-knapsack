@@ -43,7 +43,7 @@ public class Input {
 
 
     /**
-     * Takes in a file with specific Format and builds a table from that file.
+     * Takes in a file with specific format and builds a table from that file.
      *
      * @param inputFile The input file
      * @return The priority queue

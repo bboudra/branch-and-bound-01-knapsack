@@ -26,7 +26,7 @@ public class Node implements Comparable<Node>{
     }
 
     /**
-     * getProfit retrieves the profit of a node object and returns it to the caller
+     * The method <code>getProfit</code> retrieves the profit of a node object and returns it to the caller
      *
      * @return the profit
      */
@@ -36,7 +36,7 @@ public class Node implements Comparable<Node>{
     }
 
     /**
-     * getWeight retieves the weight of a node object and returns it to the caller.
+     * The method <code>getWeight</code> retieves the weight of a node object and returns it to the caller.
      *
      * @return the weight of the node object
      */
@@ -46,7 +46,7 @@ public class Node implements Comparable<Node>{
     }
 
     /**
-     * <code>getProfitPerWeight</code> retrieves the profit per weight of a node object and returns it to the caller.
+     * The method <code>getProfitPerWeight</code> retrieves the profit per weight of a node object and returns it to the caller.
      *
      * @return the profit per weight of a Node object
      */
