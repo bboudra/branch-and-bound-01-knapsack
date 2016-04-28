@@ -15,8 +15,8 @@ public class Node implements Comparable<Node>{
     /**
      * Builds A node object
      *
-     * @param profit
-     * @param weight
+     * @param profit the profit that selling this knapsack item will yield
+     * @param weight the weight of this item in the knapsack
      */
     public Node(BigDecimal profit,BigDecimal weight)
     {
@@ -46,7 +46,7 @@ public class Node implements Comparable<Node>{
     }
 
     /**
-     * getProfitPerWeight retrieves the profitperWeight of a node object and returns it to the caller.
+     * <code>getProfitPerWeight</code> retrieves the profit per weight of a node object and returns it to the caller.
      *
      * @return the profit per weight of a Node object
      */
@@ -60,6 +60,12 @@ public class Node implements Comparable<Node>{
      *
      * @param n the node object this object is being
      * @return
+     * Will return:
+     * <ul>
+     *     <li><code>1</code> if this node has a greater profit per weight than n.</li>
+     *     <li><code>0</code> if this node has the same Profit per weight as n</li>
+     *     <li><code>-1</code>-1 if n has a greater profit per weight than node 1</li>
+     * </ul>
      */
     public int compareTo(Node n) {
         return this.getProfitPerWeight().compareTo(n.getProfitPerWeight());

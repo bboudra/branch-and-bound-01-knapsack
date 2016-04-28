@@ -1,3 +1,5 @@
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
@@ -12,17 +14,23 @@ import static org.mockito.BDDMockito.*;
 public class InputTest {
 
 
+    @Before
+    public void setup()
+    {
+        //Load the testFiles from the testing resources folder into the resources folder
+       // for()
+    }
 
     @Test
-    public void verifyFileReturnTrueWhenGivenFileThatExists()
+    public void retrieveFileReturnsFileWhenFilenameExists()
     {
         //given the file exists
-        File file = new File();
+//        File file = new file();
         // and a Input object
         Input input = new Input();
 
         //when verifyFile is called with a file that exists
-        input.
+//        input.
 
         //then verifyFile should return true
 
@@ -30,27 +38,19 @@ public class InputTest {
     }
 
     @Test
-    public void verifyFileReturnFalseWhenGivenFileThatDoesntExist()
+    public void retrieveFileThrowsFileNotFoundExceptionIfFileDoesntExtist()
     {
         //given
-
         //when
 
         //then
 
     }
 
-    @Test
-    public void verifyFileReturnFalseWhenGivenBadFilename()
+    @After
+    public void TearDown()
     {
-        //given
 
-        //when
-
-        //then
     }
-
-    public
-
 
 }

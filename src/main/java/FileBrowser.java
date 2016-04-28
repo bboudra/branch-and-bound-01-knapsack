@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.io.*;
 
 /**
- * @Author Dr. Gerald Shultz
+ * @author Dr. Gerald Shultz
  */
 public class FileBrowser
 {
