@@ -13,7 +13,7 @@ public class Node implements Comparable<Node>{
 
 
     /**
-     * Builds A node object
+     * Builds a node object
      *
      * @param profit the profit that selling this knapsack item will yield
      * @param weight the weight of this item in the knapsack
