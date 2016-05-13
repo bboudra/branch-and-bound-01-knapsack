@@ -2,13 +2,12 @@ import java.io.*;
 import java.math.BigDecimal;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.PriorityQueue;
 
 /**
  * @author Benjamin Boudra
  */
-public class Input{
+public class IO {
 
     public String filename;
 
@@ -60,7 +59,26 @@ public class Input{
     }
 
     /**
-     * Takes a filename and retrieves the file. If the file doesn't exst then throw a FileNotFoundException.
+     * Write the message passed into the parameters to a file with the filename specified in the parameters.
+     *
+     * @param filename the name of the file
+     * @param message the message that should be written to the file.
+     * @throws IOException an IOException occurred
+     * @throws URISyntaxException a URISyntaxException occurred.
+     */
+    public void storeFilesInOutputDirectory(String filename, String message) throws IOException, URISyntaxException {
+        URL url = ClassLoader.getSystemResource("outputFiles");
+        File dir = new File(url.toURI());
+        File file = new File(dir, filename);
+        BufferedWriter bW = new BufferedWriter(new FileWriter(file));
+        bW.write(message);
+        bW.flush();
+        bW.close();
+    }
+
+
+    /**
+     * Takes a filename and retrieves the file. If the file doesn't exist then throw a FileNotFoundException.
      *
      * @param filename the name of the file
      * @return The file who's filename was passed in.
@@ -78,21 +96,25 @@ public class Input{
 
 
     /**
-     * Takes in a file with specific format and builds a table from that file.
+     * Takes in a file with specific format and builds a Priority Queue from that file.
      *
      * @param inputFile The input file
      * @return The priority queue
      * @throws IndexOutOfBoundsException The number of words in a do not equal the number that should be there
      * @throws IOException               there was a problem opening the file
      */
-    public PriorityQueue<Node> buildNodes(File inputFile) throws IndexOutOfBoundsException, IOException {
+    public PriorityQueue<Node> buildNodes(File inputFile, StringBuilder sB) throws IndexOutOfBoundsException, IOException {
+
         BufferedReader br;
         br = new BufferedReader(new FileReader(inputFile));
-        System.out.println("Something Went wrong, the specified file doesn't exist");
-        System.exit(1);
         String line;
         PriorityQueue<Node> nodes = new PriorityQueue<Node>();
+        sB.append("The Capacity of knapsack is: ");
+        line = br.readLine();
+        sB.append(line + "\n");
+        sB.append("Items are: \n");
         while ((line = br.readLine()) != null) {
+            sB.append(line + "\n");
             String[] words = line.split(" ");
             if (!(words.length == 0)) {
                 throw new IndexOutOfBoundsException("The formatting of the file was not valid, please reformat the file " +

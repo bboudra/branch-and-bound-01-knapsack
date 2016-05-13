@@ -1,0 +1,9 @@
+-classpath 'C:\\Users\\benbo\\IdeaProjects\\BranchAndBound01Knapsack\\build\\classes\\main;C:\\Users\\benbo\\IdeaProjects\\BranchAndBound01Knapsack\\build\\resources\\main'
+-d 'C:\\Users\\benbo\\IdeaProjects\\BranchAndBound01Knapsack\\build\\docs\\javadoc'
+-doctitle 'BranchAndBound01Knapsack 1.0-SNAPSHOT API'
+-quiet 
+-windowtitle 'BranchAndBound01Knapsack 1.0-SNAPSHOT API'
+'C:\\Users\\benbo\\IdeaProjects\\BranchAndBound01Knapsack\\src\\main\\java\\BranchAndBound01Knapsack.java'
+'C:\\Users\\benbo\\IdeaProjects\\BranchAndBound01Knapsack\\src\\main\\java\\FileBrowser.java'
+'C:\\Users\\benbo\\IdeaProjects\\BranchAndBound01Knapsack\\src\\main\\java\\Input.java'
+'C:\\Users\\benbo\\IdeaProjects\\BranchAndBound01Knapsack\\src\\main\\java\\Node.java'

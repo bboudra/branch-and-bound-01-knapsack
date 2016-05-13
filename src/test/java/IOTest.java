@@ -11,7 +11,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Created by benbo on 4/25/2016.
  */
-public class InputTest {
+public class IOTest {
 
 
     @Before
@@ -24,11 +24,6 @@ public class InputTest {
     @Test
     public void retrieveFileReturnsFileWhenFilenameExists()
     {
-        //given the file exists
-//        File file = new file();
-        // and a Input object
-        Input input = new Input();
-
         //when verifyFile is called with a file that exists
 //        input.
 

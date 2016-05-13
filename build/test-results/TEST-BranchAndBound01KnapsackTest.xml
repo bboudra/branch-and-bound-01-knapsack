@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BranchAndBound01KnapsackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-28T23:06:58" hostname="DESKTOP-RN2JCAS" time="0.002">
+  <properties/>
+  <testcase name="should" classname="BranchAndBound01KnapsackTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
